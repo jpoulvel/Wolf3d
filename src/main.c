@@ -6,7 +6,7 @@
 /*   By: aruiz-ba <aruiz-ba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/26 16:47:53 by aruiz-ba          #+#    #+#             */
-/*   Updated: 2020/01/28 13:33:59 by jpoulvel         ###   ########.fr       */
+/*   Updated: 2020/02/12 14:57:49 by jpoulvel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,9 +67,9 @@ int			main(void)
 	int		ln;
 	int		dt;
 
-	if (open("map", O_RDONLY | O_NOFOLLOW) == -1)
+	if (open(MAP, O_RDONLY | O_NOFOLLOW) == -1)
 		error(4);
-	if ((map = ft_parse_file("map", &ln, &dt)) == NULL)
+	if ((map = ft_parse_file(MAP, &ln, &dt)) == NULL)
 		exit(0);
 	set_mlx(&mlx);
 	if_error(&mlx, map);

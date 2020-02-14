@@ -6,27 +6,11 @@
 /*   By: aruiz-ba <aruiz-ba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/06 11:36:47 by aruiz-ba          #+#    #+#             */
-/*   Updated: 2020/01/28 13:56:13 by jpoulvel         ###   ########.fr       */
+/*   Updated: 2020/02/07 13:01:38 by jpoulvel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/wolf3d.h"
-/*
-int			ft_wordcount(char const *s, char c)
-{
-	int		i;
-	int		count;
-
-	i = 0;
-	count = 0;
-	while (s[i])
-	{
-		if ((s[i] != c && s[i + 1] == c) || (s[i] != c && !s[i + 1]))
-			count++;
-		i++;
-	}
-	return (count);
-}*/
 
 t_list		*reverse(t_list *head)
 {

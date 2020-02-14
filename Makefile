@@ -6,7 +6,7 @@
 #    By: jpoulvel <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/31 17:26:55 by jpoulvel          #+#    #+#              #
-#    Updated: 2019/11/11 17:08:14 by aruiz-ba         ###   ########.fr        #
+#    Updated: 2020/02/07 12:53:55 by jpoulvel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ OBJDIR	= ./obj/
 all: $(FT_LIB) $(NAME)
 
 %.o: %.c
-		$(CC) $(CFLAGS) $(FT_INC) -I $(INCDIR) -o $@ -c $<
+		@$(CC) $(CFLAGS) $(FT_INC) -I $(INCDIR) -o $@ -c $<
 
 $(FT_LIB):
 		make -C $(FT)

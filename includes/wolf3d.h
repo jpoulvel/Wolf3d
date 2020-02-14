@@ -6,16 +6,17 @@
 /*   By: aruiz-ba <aruiz-ba@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/24 19:19:37 by aruiz-ba          #+#    #+#             */
-/*   Updated: 2020/01/28 13:35:31 by jpoulvel         ###   ########.fr       */
+/*   Updated: 2020/02/12 14:56:45 by jpoulvel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WOLF3D_H
 # define WOLF3D_H
+
 # include "../Libft/libft.h"
 # include "mlx.h"
 # include "math.h"
-# include "fcntl.h"
+# define MAP		"map"
 # define WIN_WIDTH	1080
 # define WIN_HEIGHT	720
 # define TEXWIDTH 	64
@@ -149,8 +150,6 @@ typedef struct		s_mlx
 {
 	void			*mlx;
 	void			*win;
-	double			a;
-	double			b;
 	int				x;
 	int				y;
 	double			rot;
